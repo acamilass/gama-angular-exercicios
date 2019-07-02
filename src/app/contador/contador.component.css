@@ -60,3 +60,15 @@ p {
 .certa {
     color: #344055;
 }
+
+@media screen and (max-width: 600px) {
+    .resposta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .num-cont {
+        margin: 0 50px;
+        width: unset;
+    }
+}

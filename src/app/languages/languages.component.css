@@ -1,0 +1,18 @@
+.titulo {
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+}
+
+.box {
+    border-bottom: .5px solid #000;
+    padding: 15px;
+}
+
+span {
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 5px;
+}

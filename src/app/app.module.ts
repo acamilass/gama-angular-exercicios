@@ -8,6 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { LanguagesComponent } from './languages/languages.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { AddLanguageComponent } from './add-language/add-language.component';
+
+import { FormsModule } from '@angular/forms';
+import { AnoPipe } from './ano.pipe';
 
 const routes: Routes = [
   {
@@ -21,6 +25,10 @@ const routes: Routes = [
   {
     path: 'languages',
     component: LanguagesComponent
+  },
+  {
+    path: 'add-language',
+    component: AddLanguageComponent
   }
 ];
 
@@ -30,12 +38,15 @@ const routes: Routes = [
     AppComponent,
     ContadorComponent,
     LanguagesComponent,
-    HomeComponent
+    HomeComponent,
+    AddLanguageComponent,
+    AnoPipe
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

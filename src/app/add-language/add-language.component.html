@@ -1,0 +1,10 @@
+<div>
+    <h1>Adicionar nova linguagem</h1>
+    <form #form="ngForm">
+        <input type="text" [(ngModel)]="language.name" name="nome" #nome="ngModel" placeholder="Nome" required>
+        <input type="text" [(ngModel)]="language.creator" name="criador" #criador="ngModel" placeholder="Criador" required>
+        <input type="text" [(ngModel)]="language.year" name="ano" #ano="ngModel" placeholder="Ano de criação" required>
+        <button [disabled]="form.invalid" (click)="addLanguage()">Adicionar</button>
+    </form>
+    
+</div>
